@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Average Calculator</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <nav>
+     <a href="index.html"><img src="nav.png"></a>
+     <h2>Average Calculator</h2>
+    </nav>
+  <h1>2 ST Ing GE</h1>
+  
+      
+      <h4>Mathématiques Appliquées</h4>
+        <input type="number" id="math_td" placeholder="TD" required>
+        <input type="number" id="math_exam" placeholder="Examen" required>
+     
+      <h4>Ondes et Vibrations</h4>
+        <input type="number" id="vib_td" placeholder="TD" required>
+        <input type="number" id="vib_exam" placeholder="Examen" required>
+        <input type="number" id="vib_tp" placeholder="TP" required>
+        
+        
+      <h4>Electronique Fondamentale 1</h4>
+        <input type="number" id="elec_td" placeholder="TD" required>
+        <input type="number" id="elec_exam" placeholder="Examen" required>
+        <input type="number" id="elec_tp" placeholder="TP" required>
+
+      <h4>Electrotechnique
+Fondamentale 1</h4>
+        <input type="number" id="elect_td" placeholder="TD" required>
+        <input type="number" id="elect_exam" placeholder="Examen" required>
+        <input type="number" id="elect_tp" placeholder="TP" required>
+     
+      <h4>Logique Combinatoire et
+Séquentielle</h4>
+        <input type="number" id="logic_td" placeholder="TD" required>
+        <input type="number" id="logic_exam" placeholder="Examen" required>
+        <input type="number" id="logic_tp" placeholder="TP" required>
+        
+      <h4>Informatique 3</h4>
+        <input type="number" id="info_exam" placeholder="Examen" required>
+        <input type="number" id="info_tp" placeholder="TP" required>
+        
+      <h4>Etat de l'art</h4>
+        <input type="number" id="etat" placeholder="Examen" required>
+     
+      <h4>Anglais</h4>
+        <input type="number" id="an" placeholder="Examen" required>
+      <button class="open-dialog" onclick="calculateAverage()"><h4>The Average</h4></button>
+              <dialog id="myDialog">
+                <div class="d">
+                    <h3 id="result"></h3>
+                </div>
+        <button class="close-dialog" >
+          <img src="close.png">
+        </button>
+      
+      </dialog>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
