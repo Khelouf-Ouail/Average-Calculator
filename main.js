@@ -30,17 +30,17 @@ function calculateAverage(){
   
   const vibration = (vib_td*0.5+vib_tp*0.5)*0.4+vib_exam*0.6;
   
-  const elec = (elec_tp*0.5+elec_td*0.5)*0.4+elec_exam*0.6;
+  const elec = elec_td*0.4+elec_exam*0.6;
   
-  const elect = (elect_tp*0.5+elect_td*0.5)*0.4+elect_exam*0.6;
+  const elect = elect_td*0.4+elect_exam*0.6;
   
   const logic = (logic_tp*0.5+logic_td*0.5)*0.4+logic_exam*0.6;
   
   const info = info_tp*0.4+info_exam*0.6;
   
-  const total = math*3+vibration*3+elec*2+elect*2+logic*3+info*2+etat+an;
+  const total = math*3+vibration*3+elec*2+elect*2+logic*3+info*2+etat+an+elec_tp+elect_tp;
   
-  const average = total/17;
+  const average = total/19;
   
   document.getElementById('result').innerText = `The average is: ${average.toFixed(2)} / 20`;
   
@@ -52,12 +52,12 @@ const dialog = document.getElementById('myDialog');
     const openButton = document.querySelector('.open-dialog');
     const closeButton = document.querySelector('.close-dialog');
 
-    // فتح الديالوج
+
     openButton.addEventListener('click', () => {
-      dialog.showModal(); // عرض الديالوج
+      dialog.showModal(); 
     });
 
-    // إغلاق الديالوج
+    
     closeButton.addEventListener('click', () => {
       dialog.close();
     });
