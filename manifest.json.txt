@@ -1,0 +1,20 @@
+{
+  "name": "Average Calculator",
+  "short_name": "Average Calculator ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "nav.png",
+      "sizes": "3246x3246",
+      "type": "image/png"
+    },
+    {
+      "src": "close.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
