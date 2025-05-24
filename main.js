@@ -26,15 +26,15 @@ function calculateAverage(){
   const math = (math_td*0.4+math_exam*0.6);
   
   
-  const elec = elec_td*0.4+elec_exam*0.6;
+  const elec = (elec_tp*0.5+elec_td*0.5)*0.4+elec_exam*0.6;
   
-  const elect = elect_td*0.4+elect_exam*0.6;
+  const elect = (elect_tp*0.5+elect_td*0.5)*0.4+elect_exam*0.6;
   
   const logic = (logic_tp*0.5+logic_td*0.5)*0.4+logic_exam*0.6;
   
   const info = info_tp*0.4+info_exam*0.6;
   
-  const total = math*2+elec*3+elect*3+logic*4+info*2+etat+an+tech+elec_tp+elect_tp;
+  const total = math*2+elec*4+elect*4+logic*4+info*2+etat+an+tech;
   
   const average = total/19;
   
@@ -236,4 +236,5 @@ function autoSave() {
         };
         
         
-        
+
+                  
