@@ -18,7 +18,8 @@ function calculateAverage(){
   const info_exam = parseFloat(document.getElementById('info_exam').value) || 0;
   const info_tp = parseFloat(document.getElementById('info_tp').value) || 0;
   
-  const etat = parseFloat(document.getElementById('etat').value) || 0;
+  const etat_exam = parseFloat(document.getElementById('etat_exam').value) || 0;
+  const etat_td = parseFloat(document.getElementById('etat_td').value) || 0;
   
   const an = parseFloat(document.getElementById('an').value) || 0;
   const tech = parseFloat(document.getElementById('tech').value) || 0;
@@ -33,6 +34,7 @@ function calculateAverage(){
   const logic = (logic_tp*0.5+logic_td*0.5)*0.4+logic_exam*0.6;
   
   const info = info_tp*0.4+info_exam*0.6;
+  const etat = etat_td*0.4+etat_exam*0.6;
   
   const total = math*2+elec*4+elect*4+logic*4+info*2+etat+an+tech;
   
@@ -237,4 +239,4 @@ function autoSave() {
         
         
 
-                  
+
